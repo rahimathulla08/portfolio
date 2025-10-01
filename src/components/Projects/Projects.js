@@ -2,8 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import leaf from "../../Assets/Projects/leaf.png";
+import emotion from "../../Assets/Projects/emotion.png";
+import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-
+import suicide from "../../Assets/Projects/suicide.png";
+import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
   return (
@@ -22,21 +26,24 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Heart-disease-prediction-system"
-              // description="The Heart Disease Prediction System is a web-based machine learning application built with Django that predicts the likelihood of a patient having heart disease based on medical input parameters. The system uses a trained classification model to assess health risk, making it a practical tool for early intervention and medical decision support."
+              // description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
               ghLink="https://github.com/rahimathulla08/heart-disease-pred.git"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
-           <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
               title="Bits-0f-C0de"
-              description="Built an offline-first chatbot using Ollama for privacy-preserving conversational AI.
-                           "• Integrated lightweight LLM models to provide responses without requiring cloud access"
+              description="The Heart Disease Prediction System is a web-based machine learning application built with Django that predicts the likelihood of a patient having heart disease based on medical input parameters. The system uses a trained classification model to assess health risk, making it a practical tool for early intervention and medical decision support."
               ghLink="https://github.com/rahimathulla08/heart-disease-pred.git"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
-          </Col> 
+          </Col>
+
+        
         </Row>
       </Container>
     </Container>
