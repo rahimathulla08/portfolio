@@ -1,32 +1,37 @@
 import React from "react";
-import ProjectCards from "./ProjectCards";
-import project1Img from "../assets/project1.png";
-import project2Img from "../assets/project2.png";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { CgWebsite } from "react-icons/cg";
+import { BsGithub } from "react-icons/bs";
 
-function Projects() {
+function ProjectCards(props) {
   return (
-    <div className="projects-container">
-      {/* Card 1 */}
-      <ProjectCards
-        imgPath={project1Img}
-        title="Weather App"
-        description="A React app that displays real-time weather information using an API."
-        ghLink="https://github.com/username/weather-app"
-        demoLink="https://weather-app-demo.com"
-        isBlog={false}
-      />
+    <Card className="project-card-view">
+      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify" }}>
+          {props.description}
+        </Card.Text>
+        <Button variant="primary" href={props.ghLink} target="_blank">
+          <BsGithub /> &nbsp;
+          {props.isBlog ? "Blog" : "GitHub"}
+        </Button>
 
-      {/* Card 2 (another card) */}
-      <ProjectCards
-        imgPath={project2Img}
-        title="Todo List"
-        description="A simple and responsive todo list app built with React."
-        ghLink="https://github.com/username/todo-list"
-        demoLink="https://todo-app-demo.com"
-        isBlog={false}
-      />
-    </div>
+        {!props.isBlog && props.demoLink && (
+          <Button
+            variant="primary"
+            href={props.demoLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <CgWebsite /> &nbsp; Demo
+          </Button>
+        )}
+      </Card.Body>
+    </Card>
   );
 }
 
-export default Projects;
+export default ProjectCards;
+
