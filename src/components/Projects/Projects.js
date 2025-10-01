@@ -22,7 +22,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Heart-disease-prediction-system"
-              description="The Heart Disease Prediction System is a web-based machine learning application built with Django that predicts the likelihood of a patient having heart disease based on medical input parameters. The system uses a trained classification model to assess health risk, making it a practical tool for early intervention and medical decision support."
+              // description="The Heart Disease Prediction System is a web-based machine learning application built with Django that predicts the likelihood of a patient having heart disease based on medical input parameters. The system uses a trained classification model to assess health risk, making it a practical tool for early intervention and medical decision support."
               ghLink="https://github.com/rahimathulla08/heart-disease-pred.git"
             />
           </Col>
