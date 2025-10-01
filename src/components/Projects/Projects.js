@@ -24,22 +24,19 @@ function Projects() {
               title="Heart-disease-prediction-system"
               description="The Heart Disease Prediction System is a web-based machine learning application built with Django that predicts the likelihood of a patient having heart disease based on medical input parameters. The system uses a trained classification model to assess health risk, making it a practical tool for early intervention and medical decision support."
               ghLink="https://github.com/rahimathulla08/heart-disease-pred.git"
-              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
               title="Bits-0f-C0de"
-              description="The Heart Disease Prediction System is a web-based machine learning application built with Django that predicts the likelihood of a patient having heart disease based on medical input parameters. The system uses a trained classification model to assess health risk, making it a practical tool for early intervention and medical decision support."
+              description="Built an offline-first chatbot using Ollama for privacy-preserving conversational AI.
+                           "• Integrated lightweight LLM models to provide responses without requiring cloud access"
               ghLink="https://github.com/rahimathulla08/heart-disease-pred.git"
-              // demoLink="https://blogs.soumya-jit.tech/"
             />
-          </Col> */}
-
-        
+          </Col> 
         </Row>
       </Container>
     </Container>
